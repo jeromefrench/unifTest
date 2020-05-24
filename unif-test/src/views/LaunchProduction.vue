@@ -86,7 +86,7 @@ export default{
 		...mapActions(['addProduction']),
 		submit(){
 			let production = {};
-			production.titre = this.titre;
+			production.title = this.title;
 			production.synopsis = this.synopsis;
 			production.budget = this.budget;
 			production.casting = this.casting;
@@ -98,11 +98,11 @@ export default{
 				message: 'Production added!',
 				type: 'is-success'
 			});
-			title = '';
-			synopsis = '';
-			budget = '';
-			casting = [];
-			actor = '';
+			this.title = '';
+			this.synopsis = '';
+			this.budget = '';
+			this.casting = [];
+			this.actor = '';
 		},
 		addActor(){
 			this.casting.push(this.actor);
