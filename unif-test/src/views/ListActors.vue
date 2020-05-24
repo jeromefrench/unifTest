@@ -5,8 +5,16 @@
 </template>
 
 <script>
+
+import {mapGetters} from 'vuex';
+
+
 	export default{
-		
+		computed: mapGetters(["allActors"]),
+		created(){
+			console.log("bonjour");
+			console.log(this.allActors);
+		}
 	}
 </script>
 
