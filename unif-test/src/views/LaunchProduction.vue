@@ -121,6 +121,7 @@ export default{
 <style scoped>
 .card-footer {
 	border: none;
+background-color: hsl(217, 71%, 53%);
 }
 
 #add{
@@ -133,6 +134,7 @@ export default{
 .card {
 	width: 70%;
 	margin: 0 auto;
+	background-color: hsl(171, 100%, 41%);
 }
 
 .card-content {

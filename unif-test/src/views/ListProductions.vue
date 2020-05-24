@@ -19,6 +19,7 @@ export default{
 				{
 					field: 'title',
 					label: 'Title',
+					width: '140',
 				},
 				{
 					field: 'synopsis',
@@ -27,6 +28,7 @@ export default{
 				{
 					field: 'casting',
 					label: 'Casting',
+					width: '140',
 				},
 				{
 					field: 'budget',
