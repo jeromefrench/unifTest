@@ -7,10 +7,15 @@
 			<router-link to="/list-actors">List Actors</router-link>
 		</div>
 
-
-		<div class="columns">
+		<div class="columns is-mobile">
 			<div class="column gutter"></div>
-			<div class="column is-three-quarters">
+			<div class="column
+				is-three-quarters-mobile
+				is-three-quarters-tablet
+				is-three-quarters-desktop
+				is-three-quarters-widescreen
+				is-three-quarters-fullhd
+				">
 				<router-view/>
 			</div>
 			<div class="column gutter"></div>
