@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<h1>List Actors</h1>
+		<h1 class="title">List Actors</h1>
+		<ul class="list is-hoverable">
+			<li v-for="actor in allActors" class="list-item">{{actor}}</li>
+		</ul>
 	</div>
 </template>
 
@@ -9,13 +12,12 @@
 import {mapGetters} from 'vuex';
 
 
-	export default{
-		computed: mapGetters(["allActors"]),
-		created(){
-			console.log("bonjour");
-			console.log(this.allActors);
-		}
+export default{
+	computed: mapGetters(["allActors"]),
+	created(){
+		console.log(this.allActors);
 	}
+}
 </script>
 
 <style scoped>
