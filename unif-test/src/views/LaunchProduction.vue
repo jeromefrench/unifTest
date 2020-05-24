@@ -68,6 +68,9 @@
 
 <script>
 
+import {mapActions} from 'vuex';
+
+
 export default{
 	name: "LaunchProduction",
 	data: function() {
@@ -80,20 +83,26 @@ export default{
 		}
 	},
 	methods: {
+		...mapActions(['addProduction']),
 		submit(){
-			let film = {};
-			film.titre = this.titre;
-			film.synopsis = this.synopsis;
-			film.budget = this.budget;
-			film.casting = this.casting;
-			this.addFilm(film);
+			let production = {};
+			production.titre = this.titre;
+			production.synopsis = this.synopsis;
+			production.budget = this.budget;
+			production.casting = this.casting;
+			this.saveProd(production);
 		},
-		addFilm(film){
-			//on envoi sur le store
+		saveProd(production){
+			this.addProduction(production);
 			this.$buefy.toast.open({
 				message: 'Production added!',
 				type: 'is-success'
-			})
+			});
+			title = '';
+			synopsis = '';
+			budget = '';
+			casting = [];
+			actor = '';
 		},
 		addActor(){
 			this.casting.push(this.actor);
