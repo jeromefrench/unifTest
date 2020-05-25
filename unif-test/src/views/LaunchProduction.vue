@@ -39,11 +39,13 @@
 							</label>
 						</div>
 						<div id="add">
+				<b-field grouped>
 							<b-input
 								v-model="actor"
 								required
 								type="text"
 								style="display: inline-block; "
+								expanded
 								>
 							</b-input>
 								<b-button
@@ -52,6 +54,7 @@
 									>
 									Add actor
 								</b-button>
+				</b-field>
 						</div>
 					</div>
 				</b-field>
